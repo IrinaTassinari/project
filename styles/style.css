@@ -7,7 +7,8 @@
 .nav-menu {
     margin-top: 11px;
     max-width: 1512px;
-    margin-left: 270px;
+    margin-left: 100px;
+    margin-right: 50px;
 }
 .container{
     max-width: 1196px;
@@ -35,7 +36,6 @@
 }
 .input-events {
     color: #707070;
-    /* padding: 13px 0 13px 0; */
     border-radius: 8px 0 0 8px;
     padding: 13px 150px 13px 42px;
     background: url("../icons/search.svg") no-repeat 10px center;
@@ -100,8 +100,7 @@
 .top-main {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 55px;
+    gap: 75px;
     margin-top: 81px;
     margin-bottom: 97px;
 }
@@ -132,4 +131,79 @@ h1{
     color: #fff;
     padding: 8px 16px;
     cursor: pointer;
+}
+.events-head{
+    display: flex;
+    gap: 700px;
+}
+.events-head-left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.events-head h3{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 129%;
+    color: #212121;
+}
+.active-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #00798a;
+    cursor: pointer;
+}
+.grid{
+    margin-top: 24px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 36px;
+}
+.grid-item{
+
+}
+.grid-h5{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #212121;
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+.grid-p1{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #707070;
+    padding-bottom: 8px;
+}
+.flex-in-grid1{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #212121;
+    padding-bottom: 12px;
+}
+.flexes-inline{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.flex-in-grid2{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.flex-in-grid3{
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
