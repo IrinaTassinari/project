@@ -58,6 +58,9 @@
     border: none;
     cursor: pointer;
 }
+.btn-red:hover{
+    background-color: #4d4b4b;;
+}
 .header-right {
     display: flex;
     align-items: center;
@@ -97,6 +100,9 @@
     padding: 8px 16px;
     cursor: pointer;
 }
+.btn-green:hover {
+  background-color: #008f6d;
+}
 .top-main {
     display: flex;
     align-items: center;
@@ -132,6 +138,9 @@ h1{
     padding: 8px 16px;
     cursor: pointer;
 }
+.btn-green01:hover {
+  background-color: #008f6d;
+}
 .events-head{
     display: flex;
     gap: 700px;
@@ -155,15 +164,16 @@ h1{
     color: #00798a;
     cursor: pointer;
 }
+.active-link:hover{
+    color: #072c31;
+    text-decoration: underline;
+}
 .grid{
     margin-top: 24px;
     margin-bottom: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 36px;
-}
-.grid-item{
-
 }
 .grid-h5{
     font-weight: 600;
@@ -206,4 +216,53 @@ h1{
     display: flex;
     align-items: center;
     gap: 6px;
+}
+.txt-and-link{
+    margin-top: 100px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 36px;
+    margin-bottom: 90px;
+}
+.second-part-top{
+    background: rgba(151, 202, 209, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 74px;
+    padding-right: 56px;
+    margin-bottom: 59px;
+}
+.second-part-top-txt{
+    padding: 36px 0 36px 56px;
+}
+.h3-second-part{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 129%;
+    color: #212121;
+}
+.second-part-top-txt p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #212121;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.btn-red01{
+    background: #e32359;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 67px;
+    border: none;
+    cursor: pointer;
+}
+.btn-red01:hover{
+    background: #5b031c;
 }
