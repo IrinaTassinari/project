@@ -7,6 +7,7 @@
 .nav-menu {
     margin-top: 11px;
     max-width: 1512px;
+    margin-left: 270px;
 }
 .container{
     max-width: 1196px;
@@ -16,12 +17,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* gap: 470px; */
 }
 .form-header {
-    /* width: 750px; */
-     display: flex;
+    display: flex;
     align-items: center;
+    position: relative;
 }
 .img-logo {
     margin-right: 40px;
@@ -35,103 +35,101 @@
 }
 .input-events {
     color: #707070;
-    padding: 13px 0 13px 0;
+    /* padding: 13px 0 13px 0; */
     border-radius: 8px 0 0 8px;
-    padding: 13px 150px 13px 37px;
-    background-image: url(./);
-    background-image: url('./icons/search.svg');
-    background-repeat: no-repeat;
-    background-position: center left 13px;
+    padding: 13px 150px 13px 42px;
+    background: url("../icons/search.svg") no-repeat 10px center;
+    background-size: 22px 22px;
+    padding-left: 37px; /* отступ, чтобы текст не наехал на иконку */
 }
 .input-place {
-    position: relative;
- 
- 
-    padding: 13px 93px 13px 17px;
+    padding: 13px 93px 13px 0;
+}
+.form-header::after {
+    content: "Mountain View, CA";
+    position: absolute;
+    left: 553px;
 }
 .btn-red{
     position: absolute;
-    left: 42%;
+    left: 100%;
     border-radius: 0 8px 8px 0;
-    /* width: 42px;
-     height: 46px; */
     background: #f65858;
     border: none;
     cursor: pointer;
 }
-/* 
 .header-right {
-  display: flex;
-  align-items: center;
-  gap: 22px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
 }
 .header-right div {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 .header-right div img {
-  width: 22px;
-  height: 22px;
+    width: 22px;
 }
 .header-right div p {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 143%;
-  text-align: center;
-  color: #212121;
-  cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    color: #212121;
+    cursor: pointer;
 }
 .header-right a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 143%;
-  color: #212121;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #212121;
 }
 .btn-green {
-  background: #00798a;
-  border-radius: 8px;
-  border: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 143%;
-  color: #fff;
-  padding: 8px 16px;
-  cursor: pointer;
+    background: #00798a;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
 }
-
 .top-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    margin-top: 81px;
+    margin-bottom: 97px;
 }
 h1{
     max-width: 600px;
- font-weight: 700;
-font-size: 42px;
-line-height: 124%;
-color: #212121;
-padding-top: 90px;
-padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 124%;
+    color: #212121;
+    margin: 0;
 }
 .txt-in-top{
-max-width: 580px;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #212121;
-}
+    max-width: 580px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}   
 .btn-green01 {
-  background: #00798a;
-  border-radius: 8px;
-  border: none;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #fff;
-  padding: 8px 16px;
-  cursor: pointer;
-  margin: 24px 0 99px 0;
-} */
+    background: #00798a;
+    border-radius: 8px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+}
