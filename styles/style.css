@@ -363,13 +363,18 @@ h1{
     cursor: pointer;
 }
 .containers-flex{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
-    align-items: center;
+    margin-bottom: 64px;
 }
 .first-container, .second-container{
     background: rgba(151, 202, 209, 0.08);
     border-radius: 8px;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    padding: 32px 130px 24px 24px; /*одинаковый padding*/
 }
 .p-big{
     font-weight: 600;
@@ -385,4 +390,202 @@ h1{
     padding-top: 16px;
     padding-bottom: 16px;
 }
- 
+.h3-friendship{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 129%;
+    color: #212121;
+    margin-bottom: 16px;
+}
+.p-friendship{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #707070;
+    margin: 0 320px 28px 0;
+}
+.grid-friendship{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 44px;
+}
+.grid-item-fr{
+    padding-bottom: 14px;
+    padding-left: 5px;
+}
+.grid-item-fr:hover{
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.grid-item-fr h4{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #212121;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+.grid-item-fr p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #707070;
+    padding-bottom: 16px;
+    padding-right: 15px;
+}
+.grid-item-fr a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #00798a;
+}
+.grid-item-fr a:hover{
+    cursor: pointer;
+    color: #072c31;
+    text-decoration: underline;
+}
+.footer-all{
+    /* max-width: 1512px; */
+    background: #212121;
+    margin: 0 auto;
+    
+}
+.container-footer{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.first-footer{
+    border-bottom: 1px solid #707070;
+}
+.first-footer-flex{
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    padding: 24px 0 25px 0;
+}
+.first-footer p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #f6f7f8;
+}
+.btn-gray{
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background: #212121;
+    color: #fff;;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 10px 14px;
+}
+.btn-gray:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.second-footer{
+    padding-top: 24px;
+}
+.links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    padding-bottom: 41px;
+}
+.link-item{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.a-big{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #f6f7f8;
+    cursor: pointer;
+}
+.a-big:hover{
+    text-decoration: underline;
+}
+.a-small{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #c5c4c4;
+    cursor: pointer;
+}
+.a-small:hover{
+    text-decoration: underline;
+}
+
+.p-follow{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #f6f7f8;
+    padding-bottom: 12px;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.social-links-left{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.links-right{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.social-icons:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fourth-footer{
+    padding-bottom: 40px;
+}
+.links-flex{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.links-flex p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+}
+.links-fourth-footer{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #c5c4c4;
+}
+.links-fourth-footer:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.animate__animated.animate__fadeIn{
+    --animate-duration: 3s;
+  --animate-delay: 7s;
+}
+.animate__animated.animate__fadeInRight{
+    --animate-duration: 10s;
+  --animate-delay: 3s;
+}
+
