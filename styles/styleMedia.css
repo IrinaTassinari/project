@@ -459,6 +459,16 @@ h1{
     align-items: flex-start;
     padding: 19px 70px 15px 15px; /*одинаковый padding*/
 }
+.first-container:hover{
+      transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.second-container:hover{
+        transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .p-big{
     font-weight: 600;
     font-size: 12px;
@@ -477,6 +487,116 @@ h1{
     max-width: 25px;
 }
 
+/* FRIENDSHIP */
+.h3-friendship{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    color: #212121;
+    margin-bottom: 25px;
+}
+.grid-friendship{
+    display: grid;
+    grid-template-columns: 1fr;       /* одна колонка */
+    grid-template-rows: repeat(3, auto); /* три ряда */
+    gap: 32px;
+    margin-bottom: 115px;
+}
+.grid-item-fr{
+    padding: 5px 5px 14px 5px;
+}
+.grid-item-fr img{
+max-width: 359px;
+}
+.grid-item-fr h4{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 169%;
+    color: #212121;
+    margin-top: 22px;
+    margin-bottom: 11px;
+}
+.grid-item-fr p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 194%;
+    color: #707070;
+    padding-bottom: 14px;
+    padding-right: 15px;
+}
+.grid-item-fr a{
+    font-weight: 400;
+font-size: 12px;
+line-height: 194%;
+color: #00798a;
+}
+
+.footer-all{
+    max-width: 393px;
+    background: #212121;
+    margin: 0 auto;
+    
+}
+.container-footer{
+    max-width: 345px;
+    margin: 0 auto;
+}
+.first-footer{
+    border-bottom: 1px solid #707070;
+}
+.first-footer-flex{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 24px 7px 35px 0;
+}
+.first-footer p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #f6f7f8;
+    white-space: nowrap;
+}
+.btn-gray{
+    max-width: 119px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background: #212121;
+    color: #fff;;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 10px 14px;
+    white-space: nowrap;
+}
+.btn-gray:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-gray:active{
+    transform: scale(0.97);
+    transition: transform 0.1s;
+}
+
+/* SECOND FOOTER */
+.second-footer{
+    padding-top: 34px;
+}
+.links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    padding-bottom: 21px;
+    justify-content: center;
+}
+.link-item a{
+     flex-wrap: nowrap;
+}
+.fourth-footer{
+    padding-bottom: 30px;
+}
 
 }
 
