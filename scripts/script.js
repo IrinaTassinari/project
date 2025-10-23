@@ -8,7 +8,21 @@ new WOW({
   live: true            // обновлять при динамической загрузке контента
 }).init();
 
-const btnGreen = document.querySelector('.btn-green')
-btnGreen.addEventListener('click', () => {
+const btnGreen = document.getElementById('go-forward')
+if(btnGreen){
+    btnGreen.addEventListener('click', () => {
     window.location.href = './index2.html'
 })
+}
+
+
+const btnGoBack = document.getElementById('btn-go-back')
+if(btnGoBack){
+    btnGoBack.addEventListener('click', () => {
+    window.location.href = './index.html'
+})
+}
+
+
+// Если ты подключил один и тот же script.js на обе страницы (index.html и index2.html),
+// то на первой странице кнопки btn-go-back нет → появляется ошибка.

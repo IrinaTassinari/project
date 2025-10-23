@@ -6,9 +6,7 @@
 }
 .nav-menu {
     margin-top: 11px;
-    max-width: 1512px;
-    margin-left: 190px;
-    margin-right: 50px;
+    background-color: #fff;
 }
 .container{
     max-width: 1196px;
@@ -57,6 +55,10 @@
     background: #f65858;
     border: none;
     cursor: pointer;
+}
+.btn-red:active{
+    transform: scale(0.97);
+    transition: transform 0.1s;
 }
 .btn-red:hover{
     background-color: #4d4b4b;;
@@ -112,6 +114,10 @@
 .btn-green:hover {
   background-color: #008f6d;
 }
+.btn-green:active{
+    transform: scale(0.97);
+    transition: transform 0.1s;
+}
 .top-main {
     display: flex;
     align-items: center;
@@ -150,6 +156,10 @@ h1{
 .btn-green01:hover {
   background-color: #008f6d;
 }
+.btn-green01:active{
+    transform: scale(0.97);
+    transition: transform 0.1s;
+}
 .events-head{
     display: flex;
     gap: 700px;
@@ -176,6 +186,10 @@ h1{
 .active-link:hover{
     color: #072c31;
     text-decoration: underline;
+}
+.active-link:active{
+    transform: scale(0.97);
+    transition: transform 0.1s;
 }
 .grid{
     margin-top: 24px;
@@ -292,7 +306,10 @@ h1{
 .btn-red01:hover{
     background: #5b031c;
 }
-
+.btn-red01:active{
+    transform: scale(0.97);
+    transition: transform 0.1s;
+}
 .h3-explore, .h3-how-meetup{
     margin-bottom: 24px;
     font-weight: 600;
@@ -449,7 +466,7 @@ h1{
     text-decoration: underline;
 }
 .footer-all{
-    /* max-width: 1512px; */
+    max-width: 1512px;
     background: #212121;
     margin: 0 auto;
     
@@ -488,6 +505,10 @@ h1{
     transform: scale(1.03);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-gray:active{
+    transform: scale(0.97);
+    transition: transform 0.1s;
 }
 .second-footer{
     padding-top: 24px;
@@ -588,4 +609,190 @@ h1{
     --animate-duration: 27s;
   --animate-delay: 3s;
 }
+.btn-red-back{
+    background: #db2149;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.btn-red-back:active{
+    transform: scale(0.97);
+    transition: transform 0.1s;
+}
+.events-plus-map{
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* левый шире, правый уже */
+    gap: 300;
+    align-items: start; /* чтобы они выровнялись по верхнему краю */
+    margin-top: 81px;
+}
+.h3-NY{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 129%;
+    color: #000;
+    margin-bottom: 16px;
+}
+.events-near{
+    padding-bottom: 101px;
+}
+.events-near a{
+    text-decoration: none;
+    border-bottom: 4px solid #00798a;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #00798a;
+}
+.btns-filter{
+    margin-top: 16px;
+    margin-bottom: 56px;
+    display: flex;
+    gap: 17px;
+}
+.filter-btn{
+    background: #f6f7f8;
+    border-radius: 40px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #212121;
+    padding: 16px 42px 16px 16px;
+    cursor: pointer;
+    position: relative;
+   
+}
+.filter-btn::after{
+    position: absolute;
+    content: "";
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: #000;
+    background-image: url("../icons/Vector-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.filter-btn:hover{
+    /* transform: scale(0.8); */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.filter-btn:active{
+    transform: scale(0.97);
+    transition: transform 0.1s;
+}
+.h4-NY{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #212121;
+}
+.p-NY{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    color: #212121;
+}
+.map-column iframe {
+ margin-top: 14px;
+  width: 100%;
+  height: 285px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.map-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #00798a;
+  text-decoration: none;
+  font-weight: 500;
+}
+.map-link:hover {
+  text-decoration: underline;
+}
+.flex-column-item{
+    border-top: 1px solid #d9d9d9;
+    max-width: 604px;
+    padding: 16px 0 13px 5px;
+    margin-bottom: 55px;
+}
+.flex-column-item:hover{
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.another-div-no-ideas{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.p01{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #7c6f50;
+}
+.p02{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #212121;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.p03{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #707070;
+}
+.p04{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #707070;
+    padding-top: 48px;
+}
+.p05{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    padding-top: 48px;
+    color: #e32359;
+    position: relative;
+}
+.p05::before{
+    position: absolute;
+    color: #707070;
+    content: "";
 
+    left: -12%;
+    top: 85%;
+
+    width: 4px;
+    height: 4px;
+    background-image: url("../icons/point.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.p04-p05{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
