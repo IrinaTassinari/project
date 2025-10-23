@@ -4,20 +4,31 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-.none-mobile{
-    display: none;
+.desktop {
+    display: block; 
 }
-/* ====== АДАПТИВ ДЛЯ МОБИЛЬНЫХ ====== */
-    @media (max-width: 393px) {
+.mobile { 
+    display: none; 
+}
 
-  /* Прячем десктопную версию */
-    header.nav-menu:not(.mobile) {
-    display: none;
-  }
-  /* Показываем мобильную */
-    header.nav-menu.mobile {
+@media (max-width: 393px) {
+  .desktop {
+    display: none; 
+    }
+  .mobile { 
+    display: block; 
+    }
+
+    /* CONTAINER */
+  .container {
     display: block;
+    max-width: 370px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
+
+    /* HEADER */
     .container-header {
     max-width: 100%;
     padding: 0 12px;
@@ -93,6 +104,7 @@
     transform: scale(0.97);
     transition: transform 0.1s;
 }
+
 .header-bottom{
     margin: 0 auto;
 }
@@ -129,22 +141,13 @@
 }
 
 
-  .upper-section:not(.mobile) {
-    display: none;
-  }
-  /* Показываем мобильную */
-    .upper-section.mobile {
-    display: block;
-  }
-
-  .top-main {
+ /* top-main / PPL WITH BIKE */
+.top-main {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 30px;
-    margin-bottom: 20px;
-    padding-left: 21px;
-    padding-right: 14px;
+    margin-bottom: 30px;
 }
 h1{
     font-weight: 700;
@@ -160,24 +163,12 @@ h1{
 }
 .top-main img{
     max-width: 215px;
-}   
+}  
 
-.upper-section.container:not(.mobile) {
-    display: none;
-  }
-   .upper-section.container {
-    display: block;
+  /* EVENTS */
+  .events-head{
     max-width: 370px;
-    margin: 0 auto;
-  } 
-
-
-  .events-head:not(.phone) {
-    display: none;
-  }
-  /* Показываем мобильную */
-    .events-head.phone {
-    display: block;
+    padding-left: 21px;
   }
   .events-head-left{
     display: flex;
@@ -192,6 +183,308 @@ h1{
   }
   .events-head-left img{
     max-width: 164px;
+    cursor: pointer;
   }
- 
+
+  .flex-column-another{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .flex-column-item-another{
+    border-top: 1px solid #d9d9d9;
+    max-width: 364px;
+    padding: 9px 0 13px 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
+.flex-column-item-another:hover{
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+  .another-div-no-ideas01{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 7px;
+  }
+  .another-div-no-ideas01 img{
+    max-width: 97px;
+  }
+
+  .p01{
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 143%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #7c6f50;
+}
+.p02{
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 150%;
+    color: #212121;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.p03{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 143%;
+    color: #707070;
+}
+.p04{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 143%;
+    color: #707070;
+    padding-top: 17px;
+}
+.p05{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    padding-top: 48px;
+    color: #e32359;
+    position: relative;
+}
+.p05::before{
+    position: absolute;
+    color: #707070;
+    content: "";
+
+    left: -12%;
+    top: 85%;
+
+    width: 4px;
+    height: 4px;
+    background-image: url("../icons/point.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.p04-p05{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+  .img-plus-p06{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  .img-plus-p06 img{
+    max-width: 10px;
+  }
+  .p06{
+    font-weight: 500;
+    font-size: 7px;
+    line-height: 133%;
+    color: #707070;
+  }
+  .active-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 240%;
+    color: #00798a;
+    cursor: pointer;
+    align-items: center;
+}
+.active-link:hover{
+    color: #072c31;
+    text-decoration: underline;
+}
+.active-link:active{
+    transform: scale(0.97);
+    transition: transform 0.1s;
+}
+.link007{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h3-upcoming{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    color: #212121;
+    margin-top: 35px;
+}
+
+/* JOIN MEETUP */
+.second-part-top-mobile{
+    background: rgba(151, 202, 209, 0.08);
+   display: flex;
+   flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.second-part-top-mobile:hover{
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.second-part-top-txt{
+    padding: 5px 16px 32px 16px;
+     display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* justify-content: center; */
+}
+.h3-second-part{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    color: #212121;
+    padding: 16px 0 0 15px;
+}
+.second-part-top-txt img{
+    max-width: 238px;
+    margin-bottom: 6px;
+}
+.second-part-top-txt p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 200%;
+    color: #000;
+    padding-bottom: 30px;
+}
+.btn-red01{
+    max-width: 192px;
+    background: #e32359;
+    border-radius: 8px;
+    padding: 8px 67px;
+    border: none;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+}
+.btn-red01:hover{
+    background: #5b031c;
+}
+.btn-red01:active{
+    transform: scale(0.97);
+    transition: transform 0.1s;
+}
+
+/* GRID MINI ICONS */
+
+.h3-explore{
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    color: #212121;
+}
+.mini-icons-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    grid-template-rows: repeat(4, auto);   /* 4 строки */
+    row-gap: 11px;     
+    column-gap: 23px;
+    max-width: 293px; 
+    margin: 0 auto;  
+}
+
+/* POPULAR CITIES */
+.popular-cities {
+    margin-top: 45px;
+}
+.h3-popular01{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    color: #212121;
+    margin-bottom: 12px;
+}
+.p-popular{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 200%;
+    color: #707070;
+}
+.cities-circle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    grid-template-rows: repeat(2, auto);   /* 2 строки */
+    gap: 18px;     
+    max-width: 324px; 
+    margin: 15px auto;  
+}
+.city-circle img{
+    max-width: 153px;
+}
+.city-name01{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #212121;
+    padding-top: 17px;
+}
+   
+/* How Meetup works */
+.how-meetup-works{
+    margin-top: 40px;
+}
+.h3-how-meetup{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    color: #212121;
+    margin-bottom: 0;
+}
+.containers-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.first-container, .second-container{
+    background: rgba(151, 202, 209, 0.08);
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 19px 70px 15px 15px; /*одинаковый padding*/
+}
+.p-big{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 124%;
+    color: #212121;
+}
+.p-small{
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 150%;
+    color: #212121;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.first-container img, .second-container img{
+    max-width: 25px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+

@@ -3,56 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/styleMedia.css">
+    <link rel="stylesheet" href="./styles/styleMedia.css" />
     <title>Project__Irina__Tassinari__1st__page</title>
   </head>
   <body>
-    <header class="nav-menu">
-        <div class="container-header">
-    <div class="header-flex">
-        <div class="header-left">
-            <form action="#" class="form-header">
-            <img
-              src="./icons/meetup_logo.svg"
-              alt="Meetup_logo"
-              class="img-logo"
-            />
-            <input
-              type="text"
-              class="input input-events"
-              placeholder="Search events"
-            />
-            <input type="text" class="input input-place" />
-            <button class="btn-red">
-              <img src="./icons/btn-search.svg" alt="search" />
-            </button>
-          </form>
-        </div>
-
-        <div class="header-right">
-          <div>
-            <img src="./icons/lang.svg" alt="language" />
-            <p class="txt-english">English</p>
-          </div>
-          <a href="">Log in</a>
-          <button type="submit" class="btn-green" id="go-forward">Sign Up</button>
-        </div>
-      </div>
-        </div>
-    </header>
-    <!-- /.nav-menu -->
-
-      <header class="nav-menu mobile">
+    <header class="nav-menu desktop">
       <div class="container-header">
         <div class="header-flex">
-          <div class="header-left"> 
-              <img src="./icons/meetup_logo.svg" alt="Meetup_logo" class="img-logo"/>
+          <div class="header-left">
+            <form action="#" class="form-header">
+              <img
+                src="./icons/meetup_logo.svg"
+                alt="Meetup_logo"
+                class="img-logo"
+              />
+              <input
+                type="text"
+                class="input input-events"
+                placeholder="Search events"
+              />
+              <input type="text" class="input input-place" />
+              <button class="btn-red">
+                <img src="./icons/btn-search.svg" alt="search" />
+              </button>
+            </form>
           </div>
 
           <div class="header-right">
@@ -61,25 +44,56 @@
               <p class="txt-english">English</p>
             </div>
             <a href="">Log in</a>
-            <button type="submit" class="btn-green" id="go-forward">
+            <button type="submit" class="btn-green go-forward" id="go-forward">
               Sign Up
             </button>
           </div>
         </div>
-        
-        <div class="header-bottom">
-           <input type="text" class="input input-events" placeholder="Search events"/>
-              <button class="btn-red">
-                <img src="./icons/btn-search.svg" alt="search" />
-              </button>
+      </div>
+    </header>
+    <!-- /.nav-menu desktop -->
+
+    <header class="nav-menu mobile">
+      <div class="container-header">
+        <div class="header-flex">
+          <div class="header-left">
+            <img
+              src="./icons/meetup_logo.svg"
+              alt="Meetup_logo"
+              class="img-logo"
+            />
+          </div>
+
+          <div class="header-right">
+            <div>
+              <img src="./icons/lang.svg" alt="language" />
+              <p class="txt-english">English</p>
+            </div>
+            <a href="">Log in</a>
+            <button type="submit" class="btn-green go-forward" id="go-forward">
+              Sign Up
+            </button>
+          </div>
+        </div>
+
+        <div class="container mobile">
+          <div class="header-bottom">
+            <input
+              type="text"
+              class="input input-events"
+              placeholder="Search events"
+            />
+            <button class="btn-red">
+              <img src="./icons/btn-search.svg" alt="search" />
+            </button>
+          </div>
         </div>
       </div>
     </header>
     <!-- /.nav-menu mobile -->
 
-
     <main>
-      <section class="upper-section">
+      <section class="upper-section desktop">
         <div class="container">
           <div class="top-main">
             <div class="top-text-left wow animate__animated animate__fadeIn">
@@ -91,13 +105,17 @@
               </p>
               <button class="btn-green01">Join Meetup</button>
             </div>
-            <img src="./icons/pplOnBike.svg.svg" alt="picture" class="wow animate__animated animate__fadeInLeft" />
+            <img
+              src="./icons/pplOnBike.svg.svg"
+              alt="picture"
+              class="wow animate__animated animate__fadeInLeft"
+            />
           </div>
           <!-- /.top-main -->
         </div>
         <!-- /.container -->
       </section>
-      <!-- /.upper-section -->
+      <!-- /.upper-section desktop -->
 
       <section class="upper-section mobile">
         <div class="container">
@@ -110,7 +128,11 @@
                 Meetup. Events are happening every day—sign up to join the fun.
               </p>
             </div>
-            <img src="./icons/pplOnBike.svg.svg" alt="picture" class="wow animate__animated animate__fadeInLeft" />
+            <img
+              src="./icons/pplOnBike.svg.svg"
+              alt="picture"
+              class="wow animate__animated animate__fadeInLeft"
+            />
           </div>
           <!-- /.top-main -->
         </div>
@@ -118,11 +140,10 @@
       </section>
       <!-- /.upper-section mobile-->
 
-
-      <section class="with-grid none-mobile">
+      <section class="with-grid desktop">
         <div class="container">
           <div class="events">
-            <div class="events-head">
+            <div class="events-head desktop">
               <div class="events-head-left">
                 <h3>Events near</h3>
                 <img src="./icons/btn_Mountain.svg" alt="button" />
@@ -322,18 +343,84 @@
         </div>
         <!-- /.container -->
       </section>
-      <!-- /.with-grid -->
-<div class="container">
-    <div class="events-head phone">
-            <div class="events-head-left">
-                <h3>Events near</h3>
-                <img src="./icons/btn_Mountain.svg" alt="button" />
-            </div>
+      <!-- /.with-grid desktop-->
+
+      <div class="events-head mobile">
+        <div class="events-head-left">
+          <h3>Events near</h3>
+          <img src="./icons/btn_Mountain.svg" alt="button" />
         </div>
+      </div>
+
+      <div class="container mobile">
+        <div class="flex-column-another mobile">
+          <div class="flex-column-item-another mobile">
+            <div class="another-div-no-ideas01">
+              <img src="./images/event07.jpg" alt="image" />
+              <div class="p-three">
+                <p class="p01">Wed, Mar 13 · 11:30 PM UTC</p>
+                <p class="p02">
+                  All Nations - Manhattan Missions Church Bible Study
+                </p>
+                <p class="p03">Hobbies and Passions</p>
+                <div class="img-plus-p06">
+                  <img src="./icons/camera.svg" alt="img" />
+                  <p class="p06">Online Event</p>
+                </div>
+              </div>
+              <!-- /.p-three -->
+            </div>
+          </div>
+          <!-- /.flex-column-item-another -->
+
+
+          <div class="flex-column-item-another mobile">
+                <div class="another-div-no-ideas01">
+                    <img src="./images/event08.jpg" alt="image">
+                    <div class="p-three">
+                        <p class="p01">Sat, Mar 23 · 3:00 PM UTC</p>
+                        <p class="p02">INFJ Personality Type - Coffee Shop Meet & Greet</p>
+                        <p class="p03">Hobbies and Passions</p>
+                        <div class="img-plus-p06">
+                            <img src="./icons/camera.svg" alt="img" />
+                            <p class="p06">Online Event</p>
+                        </div>
+                        <p class="p04">99 attendees</p>
+                    </div>
+                    <!-- /.p-three -->
+                </div>       
+            </div>
+            <!-- /.flex-column-item-another -->
+
+            <div class="flex-column-item-another mobile">
+                <div class="another-div-no-ideas01">
+                    <img src="./images/event08.jpg" alt="image">
+                    <div class="p-three">
+                        <p class="p01">Sat, Mar 23 · 3:00 PM UTC</p>
+                        <p class="p02">INFJ Personality Type - Coffee Shop Meet & Greet</p>
+                        <p class="p03">Hobbies and Passions (25 km)</p>
+                        <div class="img-plus-p06">
+                            <img src="./icons/camera.svg" alt="img" />
+                            <p class="p06">Online Event</p>
+                        </div>
+                        <p class="p04">99 attendees</p>
+                    </div>
+                    <!-- /.p-three -->
+                </div>       
+            </div>
+            <!-- /.flex-column-item-another -->
+
+        </div>
+        <!-- /.flex-column-another mobile-->
+      </div>
+  
+      
+<div class="link007 mobile">
+<a href="./index2.html" class="active-link mobile">See all events</a>
 </div>
+      
 
-
-      <section class="another-grid">
+      <section class="another-grid desktop">
         <div class="container">
           <div class="txt-and-link">
             <h3>Upcoming online events</h3>
@@ -438,9 +525,77 @@
         </div>
         <!-- /.container -->
       </section>
-      <!-- /.another-grid -->
+      <!-- /.another-grid desktop-->
 
-      <section class="second-part">
+
+<div class="container mobile">       
+    <h3 class="h3-upcoming mobile">Upcoming online events</h3>
+        <div class="flex-column-another mobile">
+          <div class="flex-column-item-another mobile">
+            <div class="another-div-no-ideas01">
+              <img src="./images/event07.jpg" alt="image" />
+              <div class="p-three">
+                <p class="p01">Wed, Mar 13 · 11:30 PM UTC</p>
+                <p class="p02">
+                  All Nations - Manhattan Missions Church Bible Study
+                </p>
+                <p class="p03">Hobbies and Passions</p>
+                <div class="img-plus-p06">
+                  <img src="./icons/camera.svg" alt="img" />
+                  <p class="p06">Online Event</p>
+                </div>
+              </div>
+              <!-- /.p-three -->
+            </div>
+          </div>
+          <!-- /.flex-column-item-another -->
+
+          <div class="flex-column-item-another mobile">
+                <div class="another-div-no-ideas01">
+                    <img src="./images/event08.jpg" alt="image">
+                    <div class="p-three">
+                        <p class="p01">Sat, Mar 23 · 3:00 PM UTC</p>
+                        <p class="p02">INFJ Personality Type - Coffee Shop Meet & Greet</p>
+                        <p class="p03">Hobbies and Passions</p>
+                        <div class="img-plus-p06">
+                            <img src="./icons/camera.svg" alt="img" />
+                            <p class="p06">Online Event</p>
+                        </div>
+                        <p class="p04">99 attendees</p>
+                    </div>
+                    <!-- /.p-three -->
+                </div>       
+            </div>
+            <!-- /.flex-column-item-another -->
+
+            <div class="flex-column-item-another mobile">
+                <div class="another-div-no-ideas01">
+                    <img src="./images/event08.jpg" alt="image">
+                    <div class="p-three">
+                        <p class="p01">Sat, Mar 23 · 3:00 PM UTC</p>
+                        <p class="p02">INFJ Personality Type - Coffee Shop Meet & Greet</p>
+                        <p class="p03">Hobbies and Passions (25 km)</p>
+                        <div class="img-plus-p06">
+                            <img src="./icons/camera.svg" alt="img" />
+                            <p class="p06">Online Event</p>
+                        </div>
+                        <p class="p04">99 attendees</p>
+                    </div>
+                    <!-- /.p-three -->
+                </div>       
+            </div>
+            <!-- /.flex-column-item-another -->
+
+        </div>
+        <!-- /.flex-column-another mobile-->
+      </div>
+
+<div class="link007 mobile">
+<a href="./index2.html" class="active-link mobile">See all events</a>
+</div>
+
+
+      <section class="second-part desktop">
         <div class="container">
           <div class="second-part-top">
             <div class="second-part-top-txt">
@@ -452,15 +607,36 @@
               </p>
               <button class="btn-red01">Sign Up</button>
             </div>
-            <img src="./images/hands.png" alt="img-hands" />
+            <img src="./images/hands.png" alt="img-hands" class="wow animate__animated  animate__fadeInUp"/>
           </div>
           <!-- /.second-part-top -->
         </div>
         <!-- /.container -->
       </section>
-      <!-- /.second-part -->
+      <!-- /.second-part desktop-->
 
-      <section class="explore-top-categories">
+    <!-- <section class="second-part mobile"> -->
+        <div class="container mobile">
+          <div class="second-part-top-mobile">
+            <h3 class="h3-second-part">Join Meetup</h3>
+            <div class="second-part-top-txt"> 
+                
+              <img src="./images/hands.png" alt="img-hands" class="wow animate__animated  animate__fadeInUp" />
+              <p>
+                People use Meetup to meet new people, learn new things, find
+                support, get out of their comfort zones, and pursue their
+                passions, together. Membership is free.
+              </p>
+              <button class="btn-red01">Sign Up</button>
+            </div>
+          </div>
+          <!-- /.second-part-top -->
+        </div>
+        <!-- /.container -->
+      <!-- </section> -->
+      <!-- /.second-part mobile-->
+
+      <section class="explore-top-categories desktop">
         <div class="container">
           <h3 class="h3-explore">Explore top categories</h3>
           <div class="mini-icons-row">
@@ -546,10 +722,99 @@
         </div>
         <!-- /.container -->
       </section>
-      <!-- /.explore-top-categories -->
+      <!-- /.explore-top-categories desktop-->
 
-      <section class="popular-cities">
-        <div class="container">
+
+    <section class="explore-top-categories mobile">
+        <div class="container mobile">
+          <h3 class="h3-explore">Explore top categories</h3>
+          <div class="mini-icons-row">
+            <div class="mini-icon-item">
+              <img
+                src="./icons/mini-icons/travel_and_outdoor.svg.svg"
+                alt="icon"
+              />
+              <p>Travel and Outdoor</p>
+            </div>
+            <!-- /.mini-icon-item1 -->
+
+            <div class="mini-icon-item">
+              <img
+                src="./icons/mini-icons/social_activities.svg.svg"
+                alt="icon"
+              />
+              <p>
+                Social <br />
+                Activities
+              </p>
+            </div>
+            <!-- /.mini-icon-item2 -->
+
+            <div class="mini-icon-item">
+              <img
+                src="./icons/mini-icons/hobbies_and_passions.svg.svg"
+                alt="icon"
+              />
+              <p>Hobbies and Passions</p>
+            </div>
+            <!-- /.mini-icon-item3 -->
+
+            <div class="mini-icon-item">
+              <img
+                src="./icons/mini-icons/sports_and_fitness.svg.svg"
+                alt="icon"
+              />
+              <p>
+                Sports and <br />
+                Fitness
+              </p>
+            </div>
+            <!-- /.mini-icon-item4 -->
+
+            <div class="mini-icon-item">
+              <img
+                src="./icons/mini-icons/health_and_wellness.svg.svg"
+                alt="icon"
+              />
+              <p>
+                Health and <br />
+                Well-being
+              </p>
+            </div>
+            <!-- /.mini-icon-item5 -->
+
+            <div class="mini-icon-item">
+              <img src="./icons/mini-icons/technology.svg.svg" alt="icon" />
+              <p>Technology</p>
+            </div>
+            <!-- /.mini-icon-item6 -->
+
+            <div class="mini-icon-item">
+              <img
+                src="./icons/mini-icons/art_and_culture.svg.svg"
+                alt="icon"
+              />
+              <p>
+                Art and <br />
+                Culture
+              </p>
+            </div>
+            <!-- /.mini-icon-item7 -->
+
+            <div class="mini-icon-item">
+              <img src="./icons/mini-icons/games.svg.svg" alt="icon" />
+              <p>Games</p>
+            </div>
+            <!-- /.mini-icon-item8 -->
+          </div>
+          <!-- /.mini-icons-row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.explore-top-categories mobile-->
+
+      <section class="popular-cities desktop">
+        <div class="container desktop">
           <h3 class="h3-popular">Popular cities on Meetup</h3>
           <p class="p-popular">
             Looking for fun things to do near you? See what Meetup organizerare
@@ -608,12 +873,69 @@
           </div>
           <!-- /.cities-circle -->
         </div>
-        <!-- /.container -->
+        <!-- /.container desktop -->
       </section>
-      <!-- /.popular-cities -->
+      <!-- /.popular-cities desktop-->
 
-      <section class="how-meetup-works">
-        <div class="container">
+
+    <section class="popular-cities mobile">
+        <div class="container mobile">
+          <h3 class="h3-popular">Popular cities on Meetup</h3>
+          <p class="p-popular01">
+            Looking for fun things to do near you? See what Meetup organizerare
+            planning in cities around the country.
+          </p>
+          <div class="cities-circle mobile">
+            <div class="city-circle">
+              <img
+                src="./images/cities/new_york.webp.png"
+                alt="New York"
+                class="city-img"
+              />
+              <p class="city-name01">New York</p>
+            </div>
+            <!-- /.city-circle -->
+
+            <div class="city-circle">
+              <img
+                src="./images/cities/san_francisco.webp.png"
+                alt="San Francisco"
+                class="city-img"
+              />
+              <p class="city-name01">San Francisco</p>
+            </div>
+            <!-- /.city-circle -->
+
+            <div class="city-circle">
+              <img
+                src="./images/cities/chicago.webp.png"
+                alt="Chicago"
+                class="city-img"
+              />
+              <p class="city-name01">Chicago</p>
+            </div>
+            <!-- /.city-circle -->
+
+            <div class="city-circle">
+              <img
+                src="./images/cities/nashville.webp.png"
+                alt="Nashville"
+                class="city-img"
+              />
+              <p class="city-name01">Nashville</p>
+            </div>
+            <!-- /.city-circle -->
+          </div>
+          <!-- /.cities-circle -->
+        </div>
+        <!-- /.container mobile -->
+      </section>
+      <!-- /.popular-cities mobile-->
+
+
+
+      <section class="how-meetup-works desktop">
+        <div class="container desktop">
           <h3 class="h3-how-meetup">How Meetup works</h3>
           <div class="containers-flex">
             <div class="first-container">
@@ -643,9 +965,45 @@
             <!-- /.second-container -->
           </div>
         </div>
-        <!-- /.container -->
+        <!-- /.container desktop-->
       </section>
-      <!-- /.how-meetup-works -->
+      <!-- /.how-meetup-works desktop-->
+
+
+      <section class="how-meetup-works mobile">
+        <div class="container mobile">
+          <h3 class="h3-how-meetup">How Meetup works</h3>
+          <div class="containers-flex">
+            <div class="first-container">
+              <img src="./icons/search.svg_fill.svg" alt="search" />
+              <div class="txt-in-container">
+                <p class="p-big">Discover events and groups</p>
+                <p class="p-small">
+                  See who's hosting local events for all the things you love
+                </p>
+                <a href="./index2.html" class="active-link"
+                  >Search events and groups</a
+                >
+              </div>
+            </div>
+            <!-- /.first-container -->
+            <div class="second-container">
+              <img src="./icons/plus.svg.svg" alt="plus" />
+              <div class="txt-in-container">
+                <p class="p-big">Start a group to host events</p>
+                <p class="p-small">
+                  Create your own Meetup group, and draw from a community of
+                  millions
+                </p>
+                <a href="#" class="active-link">Start a group</a>
+              </div>
+            </div>
+            <!-- /.second-container -->
+          </div>
+        </div>
+        <!-- /.container mobile-->
+      </section>
+      <!-- /.how-meetup-works mobile -->
 
       <section class="friendship">
         <div class="container">
@@ -715,83 +1073,113 @@
       </div>
       <div class="second-footer">
         <div class="container-footer">
-            <div class="links">
-                <div class="link-item">
-                    <a href="#" class="a-big">Your Account</a>
-                    <a href="#" class="a-small">Sign up</a>
-                    <a href="#" class="a-small">Log in</a>
-                    <a href="#" class="a-small">Help</a>
-                    <a href="#" class="a-small">Become an Affiliate</a>
-                </div>
-                <!-- /.link-item -->
-
-                <div class="link-item">
-                    <a href="#" class="a-big">Discover</a>
-                    <a href="#" class="a-small">Groups</a>
-                    <a href="#" class="a-small">Calendar</a>
-                    <a href="#" class="a-small">Topics</a>
-                    <a href="#" class="a-small">Cities</a>
-                    <a href="#" class="a-small">Online Events</a>
-                    <a href="#" class="a-small">Local Guides</a>
-                    <a href="#" class="a-small">Make Friends</a>
-                </div>
-                <!-- /.link-item -->
-
-                <div class="link-item">
-                    <a href="#" class="a-big">Meetup</a>
-                    <a href="#" class="a-small">About</a>
-                    <a href="#" class="a-small">Blog</a>
-                    <a href="#" class="a-small">Meetup Pro</a>
-                    <a href="#" class="a-small">Careers</a>
-                    <a href="#" class="a-small">Apps</a>
-                    <a href="#" class="a-small">Podcast</a>
-                </div>
-                <!-- /.link-item -->
+          <div class="links">
+            <div class="link-item">
+              <a href="#" class="a-big">Your Account</a>
+              <a href="#" class="a-small">Sign up</a>
+              <a href="#" class="a-small">Log in</a>
+              <a href="#" class="a-small">Help</a>
+              <a href="#" class="a-small">Become an Affiliate</a>
             </div>
-            <!-- /.links -->
+            <!-- /.link-item -->
+
+            <div class="link-item">
+              <a href="#" class="a-big">Discover</a>
+              <a href="#" class="a-small">Groups</a>
+              <a href="#" class="a-small">Calendar</a>
+              <a href="#" class="a-small">Topics</a>
+              <a href="#" class="a-small">Cities</a>
+              <a href="#" class="a-small">Online Events</a>
+              <a href="#" class="a-small">Local Guides</a>
+              <a href="#" class="a-small">Make Friends</a>
+            </div>
+            <!-- /.link-item -->
+
+            <div class="link-item">
+              <a href="#" class="a-big">Meetup</a>
+              <a href="#" class="a-small">About</a>
+              <a href="#" class="a-small">Blog</a>
+              <a href="#" class="a-small">Meetup Pro</a>
+              <a href="#" class="a-small">Careers</a>
+              <a href="#" class="a-small">Apps</a>
+              <a href="#" class="a-small">Podcast</a>
+            </div>
+            <!-- /.link-item -->
+          </div>
+          <!-- /.links -->
         </div>
-    </div>
-    <!-- /.second-footer -->
-     <div class="third-footer">
+      </div>
+      <!-- /.second-footer -->
+      <div class="third-footer">
         <div class="container-footer">
-            <p class="p-follow">Follow us</p>
-            <div class="social-links">
-                <div class="social-links-left">
-                    <img src="./icons/social-icons/fb.svg" alt="social-icon" class="social-icons">
-                    <img src="./icons/social-icons/twitter.svg" alt="social-icon" class="social-icons">
-                    <img src="./icons/social-icons/youtube.svg" alt="social-icon" class="social-icons">
-                    <img src="./icons/social-icons/instagram.svg" alt="social-icon" class="social-icons">
-                    <img src="./icons/social-icons/tiktok.svg" alt="social-icon" class="social-icons">
-                </div>
-                <!-- /.social-links-left -->
-                 <div class="links-right">
-                    <img src="./icons/googleplay.svg" alt="googleplay" class="social-icons">
-                    <img src="./icons/download.svg" alt="download" class="social-icons">
-                 </div>
-                 <!-- /.links-right -->
+          <p class="p-follow">Follow us</p>
+          <div class="social-links">
+            <div class="social-links-left">
+              <img
+                src="./icons/social-icons/fb.svg"
+                alt="social-icon"
+                class="social-icons"
+              />
+              <img
+                src="./icons/social-icons/twitter.svg"
+                alt="social-icon"
+                class="social-icons"
+              />
+              <img
+                src="./icons/social-icons/youtube.svg"
+                alt="social-icon"
+                class="social-icons"
+              />
+              <img
+                src="./icons/social-icons/instagram.svg"
+                alt="social-icon"
+                class="social-icons"
+              />
+              <img
+                src="./icons/social-icons/tiktok.svg"
+                alt="social-icon"
+                class="social-icons"
+              />
             </div>
-            <!-- /.social-links -->
+            <!-- /.social-links-left -->
+            <div class="links-right">
+              <img
+                src="./icons/googleplay.svg"
+                alt="googleplay"
+                class="social-icons"
+              />
+              <img
+                src="./icons/download.svg"
+                alt="download"
+                class="social-icons"
+              />
+            </div>
+            <!-- /.links-right -->
+          </div>
+          <!-- /.social-links -->
         </div>
         <!-- /.container-footer -->
-     </div>
-     <!-- /.third-footer -->
+      </div>
+      <!-- /.third-footer -->
 
-     <div class="fourth-footer">
+      <div class="fourth-footer">
         <div class="container-footer">
-            <div class="links-flex">
-                <p>© 2024 Meetup</p>
-                <a href="#" class="links-fourth-footer">Terms of Service</a>
-                <a href="#" class="links-fourth-footer">Privacy Policy</a>
-                <a href="#" class="links-fourth-footer">Do Not Sell or Share My Personal Data</a>
-                <a href="#" class="links-fourth-footer">Cookie Policy</a>
-                <a href="#" class="links-fourth-footer">Help</a>
-            </div>
+          <div class="links-flex">
+            <p>© 2024 Meetup</p>
+            <a href="#" class="links-fourth-footer">Terms of Service</a>
+            <a href="#" class="links-fourth-footer">Privacy Policy</a>
+            <a href="#" class="links-fourth-footer"
+              >Do Not Sell or Share My Personal Data</a
+            >
+            <a href="#" class="links-fourth-footer">Cookie Policy</a>
+            <a href="#" class="links-fourth-footer">Help</a>
+          </div>
         </div>
         <!-- /.container-footer -->
-     </div>
-     <!-- /.fourth-footer -->
+      </div>
+      <!-- /.fourth-footer -->
     </footer>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="./scripts/script.js"></script>
   </body>

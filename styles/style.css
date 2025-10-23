@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-.mobile{ 
+.desktop {
+    display: block; 
+}
+.mobile { 
     display: none; 
 }
 .container-header{
@@ -617,6 +620,10 @@ h1{
 .animate__animated.animate__fadeInRight{
     --animate-duration: 27s;
   --animate-delay: 3s;
+}
+.animate__animated.animate__fadeInUp{
+    --animate-duration: 4s;
+  --animate-delay: 2s;
 }
 .btn-red-back{
     background: #db2149;

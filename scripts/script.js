@@ -8,12 +8,15 @@ new WOW({
   live: true            // обновлять при динамической загрузке контента
 }).init();
 
-const btnGreen = document.getElementById('go-forward')
-if(btnGreen){
-    btnGreen.addEventListener('click', () => {
-    window.location.href = './index2.html'
-})
-}
+const btnsGoForward = document.querySelectorAll('.go-forward');
+btnsGoForward.forEach(btn => {
+  btn.addEventListener('click', () => {
+    window.location.href = './index2.html';
+  });
+});
+
+
+
 
 
 const btnGoBack = document.getElementById('btn-go-back')
