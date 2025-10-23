@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/styleMedia.css">
     <title>Project__Irina__Tassinari__1st__page</title>
   </head>
   <body>
@@ -47,6 +48,36 @@
     </header>
     <!-- /.nav-menu -->
 
+      <header class="nav-menu mobile">
+      <div class="container-header">
+        <div class="header-flex">
+          <div class="header-left"> 
+              <img src="./icons/meetup_logo.svg" alt="Meetup_logo" class="img-logo"/>
+          </div>
+
+          <div class="header-right">
+            <div>
+              <img src="./icons/lang.svg" alt="language" />
+              <p class="txt-english">English</p>
+            </div>
+            <a href="">Log in</a>
+            <button type="submit" class="btn-green" id="go-forward">
+              Sign Up
+            </button>
+          </div>
+        </div>
+        
+        <div class="header-bottom">
+           <input type="text" class="input input-events" placeholder="Search events"/>
+              <button class="btn-red">
+                <img src="./icons/btn-search.svg" alt="search" />
+              </button>
+        </div>
+      </div>
+    </header>
+    <!-- /.nav-menu mobile -->
+
+
     <main>
       <section class="upper-section">
         <div class="container">
@@ -68,7 +99,27 @@
       </section>
       <!-- /.upper-section -->
 
-      <section class="with-grid">
+      <section class="upper-section mobile">
+        <div class="container">
+          <div class="top-main">
+            <div class="top-text-left wow animate__animated animate__fadeIn">
+              <h1>The people platform—Where interests become friendships</h1>
+              <p class="txt-in-top">
+                Whatever your interest, from hiking and reading to networking
+                and skill sharing, there are thousands of people who share it on
+                Meetup. Events are happening every day—sign up to join the fun.
+              </p>
+            </div>
+            <img src="./icons/pplOnBike.svg.svg" alt="picture" class="wow animate__animated animate__fadeInLeft" />
+          </div>
+          <!-- /.top-main -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.upper-section mobile-->
+
+
+      <section class="with-grid none-mobile">
         <div class="container">
           <div class="events">
             <div class="events-head">
@@ -272,6 +323,15 @@
         <!-- /.container -->
       </section>
       <!-- /.with-grid -->
+<div class="container">
+    <div class="events-head phone">
+            <div class="events-head-left">
+                <h3>Events near</h3>
+                <img src="./icons/btn_Mountain.svg" alt="button" />
+            </div>
+        </div>
+</div>
+
 
       <section class="another-grid">
         <div class="container">
@@ -733,7 +793,6 @@
     </footer>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
     <script src="./scripts/script.js"></script>
   </body>
 </html>

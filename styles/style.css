@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+.mobile{ 
+    display: none; 
+}
 .container-header{
     max-width: 1512px;
     margin: 0 auto; /* центрирует по горизонтали */
@@ -67,7 +70,7 @@
     transition: transform 0.1s;
 }
 .btn-red:hover{
-    background-color: #4d4b4b;;
+    background-color: #3c0808;;
 }
 .header-right {
     display: flex;
@@ -82,7 +85,7 @@
 .header-right div img {
     width: 22px;
 }
-.header-right div p {
+.txt-english{
     font-weight: 500;
     font-size: 14px;
     line-height: 143%;
