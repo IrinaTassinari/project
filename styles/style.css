@@ -4,9 +4,15 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+.container-header{
+    max-width: 1512px;
+    margin: 0 auto; /* центрирует по горизонтали */
+    padding: 0 16px; /* небольшой отступ по бокам, чтобы не прилипало */
+}
 .nav-menu {
     margin-top: 11px;
     background-color: #fff;
+    width: 100%;
 }
 .container{
     max-width: 1196px;
