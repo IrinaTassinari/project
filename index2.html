@@ -17,8 +17,8 @@
     <title>Project__Irina__Tassinari__2nd__page</title>
   </head>
   <body>
-    <header class="nav-menu">
-        <div class="container-header">
+    <header class="nav-menu desktop">
+        <div class="container-header desktop">
             <div class="header-flex">
         <div class="header-left">
           <form action="#" class="form-header">
@@ -52,13 +52,55 @@
       </div>
     </div>
     </header>
-    <!-- /.nav-menu -->
+    <!-- /.nav-menu desktop-->
+
+
+     <header class="nav-menu mobile">
+      <div class="container-header">
+        <div class="header-flex02">
+          <div class="header-left">
+            <img
+              src="./icons/meetup_logo.svg"
+              alt="Meetup_logo"
+              class="img-logo"
+            />
+          </div>
+
+          <div class="header-right02">
+            <div>
+              <img src="./icons/lang.svg" alt="language" />
+              <p class="txt-english">English</p>
+            </div>
+            <a href="">Log in</a>
+            <button type="submit" class="btn-green go-forward" id="go-forward">
+              Sign Up
+            </button>
+            <button class="btn-red-back" id="btn-go-back">Back</button>
+          </div>
+        </div>
+
+        <div class="container mobile">
+          <div class="header-bottom">
+            <input
+              type="text"
+              class="input input-events"
+              placeholder="Search events"
+            />
+            <button class="btn-red">
+              <img src="./icons/btn-search.svg" alt="search" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /.nav-menu mobile -->
 
     <main>
       <div class="container">
         <div class="events-plus-map">
           <div class="events-near">
-            <h3 class="h3-NY">Events near New York, NY</h3>
+            <h3 class="h3-NY desktop">Events near New York, NY</h3>
+            <h3 class="h3-NY mobile">Events near New York, NY</h3>
             <a href="#">Events</a>
             <div class="btns-filter">
                 <button class="filter-btn">Any type</button>
@@ -86,7 +128,7 @@
                         <p class="p01">Sat, Mar 23 · 3:00 PM UTC</p>
                         <p class="p02">INFJ Personality Type - Coffee Shop Meet & Greet</p>
                         <p class="p03">Hobbies and Passions (25 km)</p>
-                        <p class="p04">99 attendees</p>
+                        <p class="p04 desktop">99 attendees</p>
                     </div>
                     <!-- /.p-three -->
                 </div>       
@@ -102,8 +144,8 @@
                         <p class="p02">NYC AI Users - AI Tech Talks, Demo & Social: RAG Search and Customer Experience</p>
                         <p class="p03">Technology (50 km)</p>
                         <div class="p04-p05">
-                            <p class="p04">43 attendees</p>
-                            <p class="p05">2 spots left</p>
+                            <p class="p04 desktop">43 attendees</p>
+                            <p class="p05 desktop">2 spots left</p>
                         </div>
                     </div>
                     <!-- /.p-three -->
@@ -124,7 +166,7 @@
             </div>
             <!-- /.flex-column-item4 -->
 
-             <div class="flex-column-item">
+             <div class="flex-column-item desktop">
                 <div class="another-div-no-ideas">
                     <img src="./images/event11.jpg" alt="image">
                     <div class="p-three">
@@ -145,7 +187,7 @@
                         <p class="p01">Thu, Mar 14 · 11:00 PM UTC</p>
                         <p class="p02">Over 40s, 50s, & 60s Senior Singles Chat, Meet & Dating Community</p>
                         <p class="p03">Hobbies and Passions</p>
-                        <p class="p04">140 attendees</p>
+                        <p class="p04 desktop">140 attendees</p>
                     </div>
                     <!-- /.p-three -->
                 </div>       
@@ -159,7 +201,7 @@
           </div>
           <!-- /.events-near -->
 
-          <div class="maps">
+          <div class="maps desktop">
             <p class="p-NY">Find events near</p>
             <h4 class="h4-NY">New York, NY</h4>
             <div class="map-column">
@@ -191,18 +233,30 @@
     </main>
 
     <footer class="footer-all">
-      <div class="container-footer">
-        <div class="first-footer">
+      <div class="container-footer desktop">
+        <div class="first-footer desktop">
           <div class="first-footer-flex">
             <p>Create your own Meetup group.</p>
             <button class="btn-gray">Get Started</button>
           </div>
           <!-- /.first-footer-flex -->
         </div>
-        <!-- /.first-footer -->
+        <!-- /.first-footer desktop -->
       </div>
-      <div class="second-footer">
-        <div class="container-footer">
+
+      <div class="container-footer mobile">
+        <div class="first-footer mobile">
+          <div class="first-footer-flex">
+            <p>Create your own Meetup group.</p>
+            <button class="btn-gray">Get Started</button>
+          </div>
+          <!-- /.first-footer-flex -->
+        </div>
+        <!-- /.first-footer mobile -->
+      </div>
+
+      <div class="second-footer desktop">
+        <div class="container-footer desktop">
           <div class="links">
             <div class="link-item">
               <a href="#" class="a-big">Your Account</a>
@@ -239,9 +293,50 @@
           <!-- /.links -->
         </div>
       </div>
-      <!-- /.second-footer -->
-      <div class="third-footer">
-        <div class="container-footer">
+      <!-- /.second-footer desktop-->
+
+        <div class="second-footer mobile">
+        <div class="container-footer mobile">
+          <div class="links">
+            <div class="link-item">
+              <a href="#" class="a-big">Your Account</a>
+              <a href="#" class="a-small">Sign up</a>
+              <a href="#" class="a-small">Log in</a>
+              <a href="#" class="a-small">Help</a>
+              <a href="#" class="a-small">Become an Affiliate</a>
+            </div>
+            <!-- /.link-item -->
+
+            <div class="link-item">
+              <a href="#" class="a-big">Discover</a>
+              <a href="#" class="a-small">Groups</a>
+              <a href="#" class="a-small">Calendar</a>
+              <a href="#" class="a-small">Topics</a>
+              <a href="#" class="a-small">Cities</a>
+              <a href="#" class="a-small">Online Events</a>
+              <a href="#" class="a-small">Local Guides</a>
+              <a href="#" class="a-small">Make Friends</a>
+            </div>
+            <!-- /.link-item -->
+
+            <div class="link-item">
+              <a href="#" class="a-big">Meetup</a>
+              <a href="#" class="a-small">About</a>
+              <a href="#" class="a-small">Blog</a>
+              <a href="#" class="a-small">Meetup Pro</a>
+              <a href="#" class="a-small">Careers</a>
+              <a href="#" class="a-small">Apps</a>
+              <a href="#" class="a-small">Podcast</a>
+            </div>
+            <!-- /.link-item -->
+          </div>
+          <!-- /.links -->
+        </div>
+      </div>
+      <!-- /.second-footer mobile-->
+
+      <div class="third-footer desktop">
+        <div class="container-footer desktop">
           <p class="p-follow">Follow us</p>
           <div class="social-links">
             <div class="social-links-left">
@@ -288,12 +383,51 @@
           </div>
           <!-- /.social-links -->
         </div>
-        <!-- /.container-footer -->
+        <!-- /.container-footer desktop-->
       </div>
-      <!-- /.third-footer -->
+      <!-- /.third-footer desktop-->
 
-      <div class="fourth-footer">
-        <div class="container-footer">
+        <div class="third-footer mobile">
+        <div class="container-footer mobile">
+          <p class="p-follow">Follow us</p>
+          <div class="social-links">
+            <div class="social-links-left">
+              <img
+                src="./icons/social-icons/fb.svg"
+                alt="social-icon"
+                class="social-icons"
+              />
+              <img
+                src="./icons/social-icons/twitter.svg"
+                alt="social-icon"
+                class="social-icons"
+              />
+              <img
+                src="./icons/social-icons/youtube.svg"
+                alt="social-icon"
+                class="social-icons"
+              />
+              <img
+                src="./icons/social-icons/instagram.svg"
+                alt="social-icon"
+                class="social-icons"
+              />
+              <img
+                src="./icons/social-icons/tiktok.svg"
+                alt="social-icon"
+                class="social-icons"
+              />
+            </div>
+            <!-- /.social-links-left -->
+          </div>
+          <!-- /.social-links -->
+        </div>
+        <!-- /.container-footer mobile-->
+      </div>
+      <!-- /.third-footer mobile-->
+
+      <div class="fourth-footer desktop">
+        <div class="container-footer desktop">
           <div class="links-flex">
             <p>© 2024 Meetup</p>
             <a href="#" class="links-fourth-footer">Terms of Service</a>
@@ -305,9 +439,19 @@
             <a href="#" class="links-fourth-footer">Help</a>
           </div>
         </div>
-        <!-- /.container-footer -->
+        <!-- /.container-footer  desktop-->
       </div>
-      <!-- /.fourth-footer -->
+      <!-- /.fourth-footer  desktop-->
+
+      <div class="fourth-footer mobile">
+        <div class="container-footer mobile">
+          <div class="links-flex">
+            <p>© 2024 Meetup</p>
+          </div>
+        </div>
+        <!-- /.container-footer mobile-->
+      </div>
+      <!-- /.fourth-footer mobile-->
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>

@@ -42,12 +42,25 @@
     gap: 61px;
     justify-content: space-between;
   }
+   .header-flex02 {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    justify-content: center;
+  }
     .header-right{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-wrap: nowrap; /* запретить перенос строк */
     gap: 8px;
+  }
+  .header-right02{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap; /* запретить перенос строк */
+    gap: 10px;
   }
     .img-logo{
     width: 95px;
@@ -69,7 +82,15 @@
     align-items: center;
     gap: 2px;
 }
+   .header-right02 div {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
     .header-right div img {
+    width: 14px;
+}
+.header-right02 div img {
     width: 14px;
 }
     .header-right a {
@@ -81,7 +102,20 @@
     color: #212121;
     cursor: pointer;
 }
+    .header-right02 a {
+    text-decoration: none;
+    white-space: nowrap; /*не переносить слова */
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 142%;
+    color: #212121;
+    cursor: pointer;
+}
     .header-right a:hover{
+    text-decoration: underline;
+    color: #00798a;
+}
+    .header-right02 a:hover{
     text-decoration: underline;
     color: #00798a;
 }
@@ -101,6 +135,24 @@
     background-color: #008f6d;
 }
     .btn-green:active{
+    transform: scale(0.97);
+    transition: transform 0.1s;
+}
+
+.btn-red-back{
+    background: #db2149;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 142%;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    max-width: 51px;
+}
+.btn-red-back:active{
     transform: scale(0.97);
     transition: transform 0.1s;
 }
@@ -596,6 +648,35 @@ color: #00798a;
 }
 .fourth-footer{
     padding-bottom: 30px;
+}
+.events-plus-map{
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* левый шире, правый уже */
+    gap: 300;
+    align-items: start; /* чтобы они выровнялись по верхнему краю */
+    margin-top: 22px;
+}
+.btns-filter{
+    margin-top: 14px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 17px;
+}
+.flex-column{
+    margin-bottom: 68px;
+   
+}
+.flex-column-item{
+    border-top: 1px solid #d9d9d9;
+    max-width: 370px;
+    padding: 10px 0 15px 5px;
+    margin-bottom: 38px;
+}
+.another-div-no-ideas img{
+    max-width: 97px;
+}
+.events-near{
+    padding-bottom: 68px;
 }
 
 }
