@@ -13,57 +13,60 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/styleMedia.css">
+    <link rel="stylesheet" href="./styles/styleMedia.css" />
     <title>Project__Irina__Tassinari__2nd__page</title>
   </head>
   <body>
     <header class="nav-menu desktop">
-        <div class="container-header desktop">
-            <div class="header-flex">
-        <div class="header-left">
-          <form action="#" class="form-header">
-            <img
-              src="./icons/meetup_logo.svg"
-              alt="Meetup_logo"
-              class="img-logo"
-            />
-            <input
-              type="text"
-              class="input input-events"
-              placeholder="Search events"
-            />
-            <input type="text" class="input input-place" />
-            <button class="btn-red">
-              <img src="./icons/btn-search.svg" alt="search" />
-            </button>
-          </form>
-        </div>
-
-        <div class="header-right">
-          <div>
-            <img src="./icons/lang.svg" alt="language" />
-            <p class="txt-english">English</p>
+      <div class="container-header desktop">
+        <div class="header-flex">
+          <div class="header-left">
+            <form action="#" class="form-header">
+              <a href="./index.html">
+                <img
+                  src="./icons/meetup_logo.svg"
+                  alt="Meetup_logo"
+                  class="img-logo"
+                />
+              </a>
+              <input
+                type="text"
+                class="input input-events"
+                placeholder="Search events"
+              />
+              <input type="text" class="input input-place" />
+              <button class="btn-red">
+                <img src="./icons/btn-search.svg" alt="search" />
+              </button>
+            </form>
           </div>
-          <a href="">Log in</a>
-          <button type="submit" class="btn-green">Sign Up</button>
-          <button class="btn-red-back" id="btn-go-back">Go Back</button>
-          <!-- <a href="./index.html">go back</a> -->
+
+          <div class="header-right">
+            <div>
+              <img src="./icons/lang.svg" alt="language" />
+              <p class="txt-english">English</p>
+            </div>
+            <a href="">Log in</a>
+            <button type="submit" class="btn-green">Sign Up</button>
+            <button class="btn-red-back" id="btn-go-back">Go Back</button>
+            <!-- <a href="./index.html">go back</a> -->
+          </div>
         </div>
       </div>
-    </div>
     </header>
     <!-- /.nav-menu desktop-->
 
-
-     <header class="nav-menu mobile">
+    <header class="nav-menu mobile">
       <div class="container-header">
         <div class="header-flex02">
           <div class="header-left">
-            <img
-              src="./icons/meetup_logo.svg"
-              alt="Meetup_logo"
-              class="img-logo"
-            />
+            <a href="./index.html">
+              <img
+                src="./icons/meetup_logo.svg"
+                alt="Meetup_logo"
+                class="img-logo"
+              />
+            </a>
           </div>
 
           <div class="header-right02">
@@ -75,7 +78,7 @@
             <button type="submit" class="btn-green go-forward" id="go-forward">
               Sign Up
             </button>
-            <button class="btn-red-back" id="btn-go-back">Back</button>
+            <button class="btn-red-back" id="btn-go-back01">Back</button>
           </div>
         </div>
 
@@ -102,12 +105,53 @@
             <h3 class="h3-NY desktop">Events near New York, NY</h3>
             <h3 class="h3-NY mobile">Events near New York, NY</h3>
             <a href="#">Events</a>
-            <div class="btns-filter">
+
+            <div class="filters">
+              <div class="filter-group">
+                <!-- <label for="typeFilter">Event type</label> -->
+                <select id="typeFilter" class="filter-select">
+                  <option value="">Any type</option>
+                  <option value="online">Online</option>
+                  <option value="offline">Offline</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <!-- <label for="filterDistance">Distance</label> -->
+                <select id="filterDistance" class="filter-select">
+                  <option value="">Any distance</option>
+                  <option value="5">5 km</option>
+                  <option value="10">10 km</option>
+                  <option value="15">15 km</option>
+                  <option value="25">25 km</option>
+                  <option value="50">50 km</option>
+                  <option value="50">75 km</option>
+                  <option value="100">100 km</option></select
+                >
+              </div>
+              <div class="filter-group">
+                <!-- <label for="categoryFilter">Category</label> -->
+                <select id="categoryFilter" class="filter-select">
+                  <option value="">Any category</option>
+                  <option value="Hobbies and Passions">
+                    Hobbies and Passions
+                  </option>
+                  <option value="Technology">Technology</option>
+                  <option value="Business">Business</option>
+                  <option value="Health and Wellbeing">
+                    Health and Wellbeing
+                  </option>
+                  <option value="Social Activities">Social Activities</option>
+                </select>
+              </div>
+              <div class="events-list" id="eventList"></div>
+            </div>
+
+            <!-- <div class="btns-filter">
                 <button class="filter-btn">Any type</button>
                 <button class="filter-btn">Any distance</button>
                 <button class="filter-btn">Any category</button>
-           </div>
-           <div class="flex-column">
+           </div> -->
+            <!-- <div class="flex-column">
             <div class="flex-column-item">
                 <div class="another-div-no-ideas">
                     <img src="./images/event07.jpg" alt="image">
@@ -116,11 +160,8 @@
                         <p class="p02">All Nations - Manhattan Missions Church Bible Study</p>
                         <p class="p03">Hobbies and Passions (5 km)</p>
                     </div>
-                    <!-- /.p-three -->
                 </div>       
             </div>
-            <!-- /.flex-column-item1 -->
-
              <div class="flex-column-item">
                 <div class="another-div-no-ideas">
                     <img src="./images/event08.jpg" alt="image">
@@ -130,12 +171,8 @@
                         <p class="p03">Hobbies and Passions (25 km)</p>
                         <p class="p04 desktop">99 attendees</p>
                     </div>
-                    <!-- /.p-three -->
                 </div>       
             </div>
-            <!-- /.flex-column-item2 -->
-
-
              <div class="flex-column-item">
                 <div class="another-div-no-ideas">
                     <img src="./images/event09.jpg" alt="image">
@@ -148,11 +185,8 @@
                             <p class="p05 desktop">2 spots left</p>
                         </div>
                     </div>
-                    <!-- /.p-three -->
                 </div>       
             </div>
-            <!-- /.flex-column-item3 -->
-
              <div class="flex-column-item">
                 <div class="another-div-no-ideas">
                     <img src="./images/event10.jpg" alt="image">
@@ -161,12 +195,9 @@
                         <p class="p02">Book 40+ Appointments Per Month Using AI and Automation</p>
                         <p class="p03">Technology</p>
                     </div>
-                    <!-- /.p-three -->
                 </div>       
             </div>
-            <!-- /.flex-column-item4 -->
-
-             <div class="flex-column-item desktop">
+            <div class="flex-column-item desktop">
                 <div class="another-div-no-ideas">
                     <img src="./images/event11.jpg" alt="image">
                     <div class="p-three">
@@ -175,12 +206,9 @@
                         <p class="p03">Hobbies and Passions</p>
                         <p class="p04">77 attendees</p>
                     </div>
-                    <!-- /.p-three -->
                 </div>       
             </div>
-            <!-- /.flex-column-item5-->
-
-             <div class="flex-column-item">
+            <div class="flex-column-item">
                 <div class="another-div-no-ideas">
                     <img src="./images/event12.jpg" alt="image">
                     <div class="p-three">
@@ -189,15 +217,10 @@
                         <p class="p03">Hobbies and Passions</p>
                         <p class="p04 desktop">140 attendees</p>
                     </div>
-                    <!-- /.p-three -->
                 </div>       
             </div>
-            <!-- /.flex-column-item6 -->
-
-
-           </div>
-           <!-- /.flex-column -->
-           <!-- /.btns-filter -->
+          </div> -->
+            <!-- /.flex-column -->
           </div>
           <!-- /.events-near -->
 
@@ -295,7 +318,7 @@
       </div>
       <!-- /.second-footer desktop-->
 
-        <div class="second-footer mobile">
+      <div class="second-footer mobile">
         <div class="container-footer mobile">
           <div class="links">
             <div class="link-item">
@@ -387,7 +410,7 @@
       </div>
       <!-- /.third-footer desktop-->
 
-        <div class="third-footer mobile">
+      <div class="third-footer mobile">
         <div class="container-footer mobile">
           <p class="p-follow">Follow us</p>
           <div class="social-links">
