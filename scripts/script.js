@@ -38,7 +38,77 @@ if (btnGoBack01) {
   });
 }
 
+const modalBtn = document.querySelector('#modalBtn')
 
+function createModal(){
+    const modalDiv = document.createElement("div");
+    const modalForm = document.createElement("form");
+    const btnCloseModal = document.createElement("button");
+    const h3 = document.createElement("h3");
+    const img = document.createElement('img')
+    const btnSubmit = document.createElement('button');
+    const labelName = document.createElement('label')
+    const inputName = document.createElement('input')
+    const labelTel = document.createElement('label')
+    const inputTel = document.createElement('input')
+    const labelEmail = document.createElement('label')
+    const inputEmail = document.createElement('input')
+    const labelCompany = document.createElement('label')
+    const inputCompany = document.createElement('input')
+    const divForLabelInput = document.createElement('div')
+    const imagePlusForm = document.createElement('div')
+
+    h3.innerText = 'Registration form';
+    btnCloseModal.innerText = "close";
+    img.src = './images/upload-photo.jpg';
+    labelName.innerText= 'Username'
+    labelTel.innerText = 'Telefon number'
+    labelEmail.innerText = 'Email'
+    labelCompany.innerText = 'Password'
+    
+    
+    modalDiv.classList.add("modal");
+    modalDiv.classList.add("active");
+    modalForm.classList.add("modal_content");
+    btnCloseModal.classList.add("btnCloseModal");
+    // modalBtn.classList.add("btnOpen");
+    btnSubmit.classList.add('btnSubmit')
+    h3.classList.add('h3-modal')
+    img.classList.add('image-modal')
+    inputName.classList.add('input-modal')
+    inputTel.classList.add('input-modal')
+    inputEmail.classList.add('input-modal')
+    inputCompany.classList.add('input-modal')
+    labelName.classList.add('label-modal')
+    labelTel.classList.add('label-modal')
+    labelEmail.classList.add('label-modal')
+    labelCompany.classList.add('label-modal')
+    divForLabelInput.classList.add('divForLabelInput')
+    imagePlusForm.classList.add('imagePlusForm')
+
+    btnSubmit.innerText = 'Sign up';
+    btnSubmit.type = 'submit';
+
+    // InputDeviceInfo.value= event EventTarget.value
+
+    divForLabelInput.append(labelName,inputName,labelTel,inputTel,labelEmail,inputEmail,labelCompany,inputCompany,btnSubmit)
+    imagePlusForm.append(img,divForLabelInput)
+    modalForm.append(btnCloseModal,h3,imagePlusForm);
+    modalDiv.append(modalForm);
+    document.body.append(modalDiv);
+
+    modalBtn.addEventListener('click', () => {
+    modalDiv.remove();
+  })
+
+    modalDiv.addEventListener("click", (event) => {
+    if (event.target === modalDiv) modalDiv.remove();
+  });
+}
+
+modalBtn.addEventListener("click", () => {
+  createModal();
+});
 
 // Если ты подключил один и тот же script.js на обе страницы (index.html и index2.html),
 // то на первой странице кнопки btn-go-back нет → появляется ошибка.

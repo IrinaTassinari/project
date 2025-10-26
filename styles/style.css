@@ -327,6 +327,127 @@ h1 {
   transform: scale(0.97);
   transition: transform 0.1s;
 }
+
+
+.modal{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center; 
+    animation: fadeIn 0.2s ease;
+}
+.active{
+    display: flex !important ;
+}
+.modal_content{
+    background-color: white;
+    color: black;
+    width: 750px;
+    padding: 10px;
+}
+/* .btnOpen{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    margin: 20px;
+    font-size: 14px;
+    font-weight: 400;
+} */
+.btnCloseModal{
+    border: none;
+    background-color: rgb(198, 66, 66);
+    border-radius: 8px;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 0 10px 670px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.btnCloseModal:hover {
+  background: #5b031c;
+}
+.btnSubmit{
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(7, 99, 58);
+    color: white;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100px;
+}
+.btnSubmit:hover {
+ background-color: rgb(24, 175, 107);
+}
+.h3-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    font-size: 20px;
+
+}
+.image-modal{
+    width: 347px;
+    cursor: pointer;
+}
+.image-modal:hover {
+  background: #5b031c;
+}
+.image-modal:active {
+  transform: scale(0.97);
+  transition: transform 0.1s;
+}
+
+.input-modal{
+    width: 200px;
+    height: 32px;
+    border: 1px solid rgb(147, 136, 136);
+    border-radius: 8px;
+}
+.label-modal{
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration-line: underline;
+}
+.divForLabelInput{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 8px;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.imagePlusForm{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    
+}
+
+
+
 .h3-explore,
 .h3-how-meetup {
   margin-bottom: 24px;
