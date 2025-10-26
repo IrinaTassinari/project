@@ -871,8 +871,17 @@ h1 {
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  transition: all 0.3s ease;
   border: 1px solid #e2e8f0;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .event-card:hover {
@@ -954,10 +963,11 @@ h1 {
   padding: 60px 20px;
   color: #718096;
   font-size: 1.1rem;
+  margin-left: 280px;
 }
 
 .no-events-icon {
-  font-size: 4rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   opacity: 0.5;
 }
