@@ -10,6 +10,124 @@
 .mobile {
   display: none;
 }
+
+/* Светлая тема (по умолчанию) */
+[data-theme="light"] body {
+  background-color: #ffffff;
+  color: #212121;
+}
+
+/* Тёмная тема */
+[data-theme="dark"] body {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+
+[data-theme="light"] header {
+  background-color: #ffffff;
+  color: #212121;
+}
+
+[data-theme="dark"] header {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Тёмная тема */
+[data-theme="dark"] .header-right,
+[data-theme="dark"] .header-right a,
+[data-theme="dark"] .header-right p,
+[data-theme="dark"] .header-right02 a,
+[data-theme="dark"] .header-right02 p {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .header-right img,
+[data-theme="dark"] .header-right02 img {
+  filter: invert(1);
+}
+
+[data-theme="dark"] .top-main img{
+  background-color: #ffffff;
+  border-radius: 70px;
+}
+
+[data-theme="dark"] .active-link,
+[data-theme="dark"] .grid-item-fr a{
+  color: #62b89f;
+}
+
+[data-theme="dark"] .top-text-left h1,
+[data-theme="dark"] .top-text-left p,
+[data-theme="dark"] .events-head-left h3,
+[data-theme="dark"] .h3-upcoming,
+[data-theme="dark"] .grid-h5,
+[data-theme="dark"] .flex-in-grid1 p,
+[data-theme="dark"] .h3-second-part,
+[data-theme="dark"] .h3-explore,
+[data-theme="dark"] .h3-popular,
+[data-theme="dark"] .city-name,
+[data-theme="dark"] .city-name01,
+[data-theme="dark"] .h3-how-meetup,
+[data-theme="dark"] .p-big,
+[data-theme="dark"] .h3-friendship,
+[data-theme="dark"] .grid-item-fr h4,
+[data-theme="dark"] .h3-NY,
+[data-theme="dark"] .p02,
+[data-theme="dark"] .h4-NY{
+  color: #ffffff;
+}
+
+[data-theme="dark"] .p01,
+[data-theme="dark"] .p03,
+[data-theme="dark"] .second-part-top-txt p,
+[data-theme="dark"] .mini-icon-item p,
+[data-theme="dark"] .events-near a,
+[data-theme="dark"] .p-small,
+[data-theme="dark"] .p-NY,
+[data-theme="dark"] .event-title{
+   color: #b0abab;
+}
+
+[data-theme="dark"] .active-link:hover{
+   color: #217985;
+  text-decoration: underline;
+}
+
+[data-theme="dark"] .event-date{
+  color: #718096;
+}
+
+
+
+/* Пример изменения цвета карточек */
+[data-theme="dark"] .event-card {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+/* Пример изменения инпутов */
+[data-theme="dark"] .input,
+[data-theme="dark"] .filter-select {
+  background: #2a2a2a;
+  color: #f1f1f1;
+  border-color: #444;
+}
+
+/* Кнопка переключения темы */
+.btn-theme {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-theme:hover {
+  transform: scale(1.1);
+}
+
 /* HEADER */
 .container-header {
   max-width: 1512px;
@@ -842,7 +960,6 @@ h1 {
   background-repeat: no-repeat;
   background-size: 16px;
   padding-right: 40px;
-   
 }
 
 .filter-select:focus {
