@@ -736,7 +736,8 @@ h1 {
   text-decoration: underline;
 }
 .footer-all {
-  max-width: 1512px;
+  /* max-width: 1512px; */
+  width: 100%;
   background: #212121;
   margin: 0 auto;
 }
