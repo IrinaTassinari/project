@@ -282,30 +282,64 @@ class EventFilter {
 
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const html = document.documentElement;
-  const btnTheme = document.getElementById("theme-toggle");
+  const themeButtons = document.querySelectorAll("#theme-toggle");
 
-  // Загружаем тему из localStorage или ставим светлую по умолчанию
+  // Загружаем сохранённую тему или ставим светлую
   const savedTheme = localStorage.getItem("theme") || "light";
   html.setAttribute("data-theme", savedTheme);
-  updateThemeIcon(savedTheme);
+  updateThemeIcons(savedTheme);
 
-  // Переключаем тему по клику
-  btnTheme.addEventListener("click", () => {
-    const currentTheme = html.getAttribute("data-theme");
-    const newTheme = currentTheme === "light" ? "dark" : "light";
+  // Добавляем обработчик на все кнопки
+  themeButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const currentTheme = html.getAttribute("data-theme");
+      const newTheme = currentTheme === "light" ? "dark" : "light";
 
-    html.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
-    updateThemeIcon(newTheme);
+      html.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+      updateThemeIcons(newTheme);
+    });
   });
 
-  // Обновляем иконку кнопки 🌙☀️
-  function updateThemeIcon(theme) {
-    btnTheme.textContent = theme === "light" ? "🌙" : "☀️";
+  // Обновляем иконки у всех кнопок (🌙 / ☀️)
+  function updateThemeIcons(theme) {
+    themeButtons.forEach((btn) => {
+      btn.textContent = theme === "light" ? "🌙" : "☀️";
+    });
   }
 });
+
+
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const html = document.documentElement;
+//   // const btnTheme = document.getElementById("theme-toggle");
+//    const themeButtons = document.querySelectorAll("#theme-toggle");
+
+//   // Загружаем тему из localStorage или ставим светлую по умолчанию
+//   const savedTheme = localStorage.getItem("theme") || "light";
+//   html.setAttribute("data-theme", savedTheme);
+//   updateThemeIcon(savedTheme);
+
+//   // Переключаем тему по клику
+//   btnTheme.addEventListener("click", () => {
+//     const currentTheme = html.getAttribute("data-theme");
+//     const newTheme = currentTheme === "light" ? "dark" : "light";
+
+//     html.setAttribute("data-theme", newTheme);
+//     localStorage.setItem("theme", newTheme);
+//     updateThemeIcon(newTheme);
+//   });
+
+//   // Обновляем иконку кнопки 🌙☀️
+//   function updateThemeIcon(theme) {
+//     btnTheme.textContent = theme === "light" ? "🌙" : "☀️";
+//   }
+// });
 
 
 
