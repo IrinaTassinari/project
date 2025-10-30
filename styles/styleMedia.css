@@ -548,6 +548,7 @@
     margin-bottom: 25px;
   }
   .grid-friendship {
+    width: 354px;
     display: grid;
     grid-template-columns: 1fr; /* одна колонка */
     grid-template-rows: repeat(3, auto); /* три ряда */
@@ -555,10 +556,10 @@
     margin-bottom: 115px;
   }
   .grid-item-fr {
-    padding: 5px 5px 14px 5px;
+    padding: 5px;
   }
   .grid-item-fr img {
-    max-width: 359px;
+    max-width: 339px;
   }
   .grid-item-fr h4 {
     font-weight: 600;
