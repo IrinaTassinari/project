@@ -334,12 +334,14 @@ h1 {
   gap: 36px;
 }
 .grid-item:hover {
+  padding: 5px;
   cursor: pointer;
   transform: scale(1.03);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .grid-item2:hover {
+  padding: 5px;
   cursor: pointer;
   transform: scale(1.03);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
@@ -872,7 +874,7 @@ h1 {
   cursor: pointer;
 }
 .animate__animated.animate__fadeIn {
-  --animate-duration: 5s;
+  --animate-duration: 6s;
   --animate-delay: 7s;
 }
 .animate__animated.animate__fadeInRight {
@@ -880,7 +882,7 @@ h1 {
   --animate-delay: 3s;
 }
 .animate__animated.animate__fadeInUp {
-  --animate-duration: 4s;
+  --animate-duration: 1s;
   --animate-delay: 2s;
 }
 .btn-red-back {
