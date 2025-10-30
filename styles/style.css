@@ -396,12 +396,58 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
-.grid2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 36px;
-  margin-bottom: 90px;
+.scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
+
+.grid2 {
+  padding: 10px;
+  display: flex;
+  gap: 36px;
+  overflow-x: auto;
+  scrollbar-width: none; /* скрыть полосу прокрутки */
+  
+  scroll-behavior: smooth; /* плавный скролл */
+}
+.grid-item2 {
+  flex: 0 0 auto; /* чтобы не сжимались */
+  scroll-snap-align: start; /* каждая карточка — точка прилипания */
+  width: 280px; /* фиксированная ширина (или % по желанию) */
+  transition: transform 0.3s ease;
+}
+.grid2::-webkit-scrollbar {
+  display: none; /* скрыть  */
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+.scroll-btn:hover {
+  background: rgba(255,255,255,1);
+}
+
+.scroll-btn.left { left: 0; }
+.scroll-btn.right { right: 0; }
+
+.scroll-img{
+  width: 272px;
+}
+
 .second-part-top {
   background: rgba(151, 202, 209, 0.08);
   display: flex;

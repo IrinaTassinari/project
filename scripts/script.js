@@ -38,6 +38,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+const grid = document.querySelector('.grid2');
+const btnLeft = document.querySelector('.scroll-btn.left');
+const btnRight = document.querySelector('.scroll-btn.right');
+
+if (grid && btnLeft && btnRight) {
+  btnLeft.addEventListener('click', () => {
+    grid.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+
+  btnRight.addEventListener('click', () => {
+    grid.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+}
+
+
   // --- 4. Модальное окно ---
   const modalBtn = document.querySelector("#modalBtn");
   if (modalBtn) {
@@ -204,17 +219,46 @@ class EventFilter {
     const typeFilter = document.querySelector("#typeFilter");
     const filterDistance = document.querySelector("#filterDistance");
     const categoryFilter = document.querySelector("#categoryFilter");
+    const filterSearch = document.querySelectorAll('.input-search');
+
+    if (filterSearch.length) {
+  filterSearch.forEach(input =>
+    input.addEventListener("input", (e) => this.handleFilterChange(e))
+  );
+}
+    
 
     [typeFilter, filterDistance, categoryFilter].forEach((item) => {
       item.addEventListener("change", (e) => this.handleFilterChange(e));
     });
+
+    filterSearch.forEach((input) => {
+  input.addEventListener("input", (e) => this.handleFilterChange(e));
+});
   }
 
+  // handleFilterChange(e) {
+  //   const { id, value } = e.target;
+  //   this.filters[id.replace("Filter", "")] = value;
+  //   this.applyFilters();
+  // }
+
+
   handleFilterChange(e) {
-    const { id, value } = e.target;
-    this.filters[id.replace("Filter", "")] = value;
-    this.applyFilters();
+  const { id, value, classList } = e.target;
+
+  if (classList.contains('input-search')) {
+    this.filters.search = value.trim().toLowerCase();
+  } else if (id === "typeFilter") {
+    this.filters.type = value;
+  } else if (id === "filterDistance") {
+    this.filters.distance = value;
+  } else if (id === "categoryFilter") {
+    this.filters.category = value;
   }
+
+  this.applyFilters();
+}
 
   applyFilters() {
     this.filteredEvents = this.events.filter((event) => {
@@ -224,7 +268,12 @@ class EventFilter {
         event.distance <= parseInt(this.filters.distance);
       const categoryMatch =
         !this.filters.category || event.category === this.filters.category;
-      return typeMatch && distanceMatch && categoryMatch;
+      const searchMatch =
+  !this.filters.search ||
+  event.title.toLowerCase().includes(this.filters.search) ||
+  event.description.toLowerCase().includes(this.filters.search);
+
+      return typeMatch && distanceMatch && categoryMatch && searchMatch;
     });
     this.renderEvents();
   }
