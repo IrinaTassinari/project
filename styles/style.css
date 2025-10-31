@@ -338,14 +338,14 @@ h1 {
   cursor: pointer;
   transform: scale(1.03);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 .grid-item2:hover {
   padding: 5px;
   cursor: pointer;
   transform: scale(1.03);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 .grid-h5 {
   font-weight: 600;
